@@ -9,7 +9,6 @@ FROM python:3.7.2-slim
 COPY . .
 
 # Install python dependencies listed in src/requirements.txt
-# default-timeout can be removed once Saffat's internet is fixed
 RUN pip install --upgrade pip && \
     pip install --default-timeout=100 -r src/requirements.txt
 
