@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#gameBoard {
+  padding: 0px;
+  margin: 0 auto;
+  border: 2px solid #181818;
+  height: fit-content;
+  width: fit-content;
+}
+
+#gameBoard tr td {
+  width: 60px;
+  height: 60px;
+}
+
+#gameBoard tr:nth-child(2n) td:nth-child(2n+1) {
+  background: #ffe680;
+}
+
+#gameBoard tr:nth-child(2n+1) td:nth-child(2n) {
+  background: #ffe680;
+}
+
+#gameBoard tr:nth-child(2n) td:nth-child(2n) {
+  background: #99e699;
+}
+
+#gameBoard tr:nth-child(2n+1) td:nth-child(2n+1) {
+  background: #99e699;
+}
+
+.checker {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.P1 {
+	background: #CC0000;
+}
+
+.P2 {
+    background: #00001F;
+}
+
+.highlighted{
+    border: 5px solid #ffff00;
+}
+
+.P1_KING {
+  background: #CC0000;
+  border: 5px solid #ffffff;
+}
+
+.P2_KING {
+  background: #00001F;
+	border: 5px solid #ffffff;
+}

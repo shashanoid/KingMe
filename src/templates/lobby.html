@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %} lobbies {% endblock title %}
+
+{% block body %}
+{% for game in games %}
+{{ game }}<br/>
+{% endfor %}
+{% endblock body %}
